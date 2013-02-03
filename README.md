@@ -1,4 +1,4 @@
-Tappable-Stories
+# Tappable-Stories
 ================
 *A Wordpress/Tumblr/HTML plugin that easily allows for tappable slides to create stories*
 
@@ -11,7 +11,10 @@ Also I'd appreciate it if you send me your stories so I can see what you make wi
 
 ================
 
-### WORDPRESS INSTALLATION
+## Wordpress
+### [An example of what this does on Wordpress](http://www.lifeofalvin.com/?p=257)
+
+#### INSTALLATION
 
 Requirements: You must have Wordpress hosted on your own server. (If your website name is something like mysite.wordpress.com, this won't work.)
 
@@ -21,7 +24,7 @@ Requirements: You must have Wordpress hosted on your own server. (If your websit
 4. On the right, you'll see a list of "Templates" — click on Header
 5. Paste everything in "embed.html" at the very top of that file. Then click "Update File"
 
-### HOW TO USE IT ON WORDPRESS
+#### HOW TO USE
 
 1. Go to Posts > Add New just like you would always do
 2. On top of the textbox where you write you post, there is a tab that says "Visual" and "Text" — make sure "Text" is selected
@@ -39,10 +42,12 @@ Requirements: You must have Wordpress hosted on your own server. (If your websit
 
 4. Hit save, and you're done.
 
+================
 
+## Tumblr
+### [An example of what this does on Tumblr](http://alvinch.com/post/42121568412/would-you-want-to-make-tappable-stories)
 
-
-### TUMBLR INSTALLATION
+#### INSTALLATION
 
 1. Log into your Tumblr where you usually make posts. At the top, click the "Settings" button which looks like a gear
 2. On the left, click on the name of your blog. (It should have your avatar next to it.)
@@ -51,7 +56,7 @@ Requirements: You must have Wordpress hosted on your own server. (If your websit
 5. Right under &lt;head&gt;, paste in everything in "embed.html". Hit "Update Preview" and make sure nothing broke. (If it did, undo.) Then hit "Save" and go back to "Appearance." Hit "Save" again and then "Close" — and you're done.
 
 
-### HOW TO USE IT ON TUMBLR
+#### HOW TO USE
 
 1. Under Settings (the gear button) you'll automatically be on the "Account" page. There is a section that asks "Edit Posts using" ... change that to "plain text/HTML" and save.
 2. Now go back to how you would normally post some text, except now you can create tappable stories thusly. (An example is below):
