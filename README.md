@@ -1,14 +1,15 @@
 Tappable-Stories
 ================
-A Wordpress/Tumblr/HTML plugin that easily allows for tappable slides to create stories
+*A Wordpress/Tumblr/HTML plugin that easily allows for tappable slides to create stories*
 
-by Alvin Chang
-@alvinschang
-alvinschang.com
+**by Alvin Chang**
+*@alvinschang*
+*alvinschang.com*
 
 Use and edit freely. But please leave above attribution and this text in this file.
 Also I'd appreciate it if you send me your stories so I can see what you make with this tool :)
 
+================
 
 ### WORDPRESS INSTALLATION
 
@@ -25,15 +26,15 @@ Step 5: Paste everything in this file at the very top of that file. Then click "
 Step 1: Go to Posts > Add New just like you would always do
 Step 2: On top of the textbox where you write you post, there is a tab that says "Visual" and "Text" — make sure "Text" is selected
 Step 3: This might be too technical for some, but in that textbox, you must wrap the tappable post in a "div" with the class "tapper" — and each slide must be separates by two linebreaks. Here's an example:
-<code>
-<div class="tapper">
-This is the first slide.
 
-This is the second slide.
+  <div class="tapper">
+  This is the first slide.
+  
+  This is the second slide.
+  
+  They are separated by two linebreaks.
+  </div>
 
-They are separated by two linebreaks.
-</div>
-</code>
 Step 4: Hit save, and you're done.
 
 
@@ -53,14 +54,13 @@ Step 5: Right under <head>, paste in all the code in this document. Hit "Update 
 Step 1: Under Settings (the gear button) you'll automatically be on the "Account" page. There is a section that asks "Edit Posts using" ... change that to "plain text/HTML" and save.
 Step 2: Now go back to how you would normally post some text, except now you can create tappable stories thusly. (An example is below):
 
-<code>
-<div class="tapper">
-This is the first slide.
 
-This is the second slide.
-
-They are separated by two linebreaks.
-</div>
-</code>
+  <div class="tapper">
+  This is the first slide.
+  
+  This is the second slide.
+  
+  They are separated by two linebreaks.
+  </div>
 
 Step 3: Publish post and you're done.
