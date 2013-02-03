@@ -19,7 +19,7 @@ Requirements: You must have Wordpress hosted on your own server. (If your websit
 2. Click on Appearance on the left
 3. Click on Editor, which appears under Appearances
 4. On the right, you'll see a list of "Templates" — click on Header
-5. Paste everything in this file at the very top of that file. Then click "Update File"
+5. Paste everything in "embed.html" at the very top of that file. Then click "Update File"
 
 ### HOW TO USE IT ON WORDPRESS
 
@@ -48,7 +48,7 @@ Requirements: You must have Wordpress hosted on your own server. (If your websit
 2. On the left, click on the name of your blog. (It should have your avatar next to it.)
 3. There should be a "Theme" section with a "Customize" button. Click it.
 4. On the left, you should see an "Edit HTML" button. Click it.
-5. Right under <head>, paste in all the code in this document. Hit "Update Preview" and make sure nothing broke. (If it did, undo.) Then hit "Save" and go back to "Appearance." Hit "Save" again and then "Close" — and you're done.
+5. Right under &lt;head&gt;, paste in everything in "embed.html". Hit "Update Preview" and make sure nothing broke. (If it did, undo.) Then hit "Save" and go back to "Appearance." Hit "Save" again and then "Close" — and you're done.
 
 
 ### HOW TO USE IT ON TUMBLR
