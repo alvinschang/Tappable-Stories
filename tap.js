@@ -6,6 +6,9 @@ alvinschang.com
 
 Use and edit freely. But please leave above attribution and this text in this file.
 Also I'd appreciate it if you send me your stories so I can see what you make with this tool :)
+
+More on how to use this at http://github.com/alvinschang/Tappable-Stories
+
 **********************************/
 
 $(function() {
