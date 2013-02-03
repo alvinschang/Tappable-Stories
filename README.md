@@ -1,13 +1,16 @@
 # Tappable-Stories
 ================
-*A Wordpress/Tumblr/HTML plugin that easily allows for tappable slides to create stories*
+**by [Alvin Chang](http://alvinschang.com)** | [@alvinschang](http://twitter.com/alvinschang)
 
-**by Alvin Chang**
-*@alvinschang*
-*alvinschang.com*
+This is a plugin for Wordpress and Tumblr that easily allows you to make tappable stories. In short, it allows writers to tell stories in slides. Technically, this is an easy feat. Nothing fancy. But as a storyteller, I find this to be extremely useful when I want to establish a playful pace to the story. It also lends itself well to surprise and delight.  
 
-Use and edit freely. But please leave above attribution and this text in this file.
-Also I'd appreciate it if you send me your stories so I can see what you make with this tool :)
+## How to use it
+
+You can either download the Javascript/CSS and upload them on your own servers, or if you're a beginner/lazy, use "embed.html" and follow the instructions of where to put them for both Wordpress and Tumblr. (Instructions for each are below.)
+
+This script looks inside the div with the class "tapper" and parses out the text into separate slides; each slide is divided with two linebreaks.
+
+Use and edit freely. But please leave in the attribution. Also, not necessary, but I'd appreciate it if you send/tweet me your stories so I can see what you make with this tool :)
 
 ================
 
