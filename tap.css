@@ -1,0 +1,20 @@
+.allSlides {
+	height: 250px;
+	width: 90%;
+	padding: 5%;
+	padding-top: 20%;
+	margin: 10px 0;
+	font-size: 20px;
+	text-align: center;
+	border: 1px solid #555;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	box-shadow: 3px 5px 14px 3px #bbb;
+	-moz-box-shadow: 3px 5px 14px 3px #bbb;
+}
+.tapView { font-size: 13px; }

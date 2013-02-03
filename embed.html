@@ -1,0 +1,126 @@
+<!-- 
+TAPPABLE SLIDES
+by Alvin Chang
+@alvinschang
+alvinschang.com
+
+Use and edit freely. But please leave above attribution and this text in this file.
+Also I'd appreciate it if you send me your stories so I can see what you make with this tool :)
+
+WORDPRESS INSTALLATION:
+
+Requirements: You must have Wordpress hosted on your own server. (If your website name is something like mysite.wordpress.com, this won't work.)
+
+Step 1: Log into your Dashboard
+Step 2: Click on Appearance on the left
+Step 3: Click on Editor, which appears under Appearances
+Step 4: On the right, you'll see a list of "Templates" — click on Header
+Step 5: Paste everything in this file at the very top of that file. Then click "Update File"
+
+HOW TO USE IT ON WORDPRESS:
+
+Step 1: Go to Posts > Add New just like you would always do
+Step 2: On top of the textbox where you write you post, there is a tab that says "Visual" and "Text" — make sure "Text" is selected
+Step 3: This might be too technical for some, but in that textbox, you must wrap the tappable post in a "div" with the class "tapper" — and each slide must be separates by two linebreaks. Here's an example:
+
+<div class="tapper">
+This is the first slide.
+
+This is the second slide.
+
+They are separated by two linebreaks.
+</div>
+
+Step 4: Hit save, and you're done.
+
+
+TUMBLR INSTALLATION:
+
+Step 1: Log into your Tumblr where you usually make posts. At the top, click the "Settings" button which looks like a gear
+Step 2: On the left, click on the name of your blog. (It should have your avatar next to it.)
+Step 3: There should be a "Theme" section with a "Customize" button. Click it.
+Step 4: On the left, you should see an "Edit HTML" button. Click it.
+Step 5: Right under <head>, paste in all the code in this document. Hit "Update Preview" and make sure nothing broke. (If it did, undo.) Then hit "Save" and go back to "Appearance." Hit "Save" again and then "Close" — and you're done.
+
+
+HOW TO USE IT ON TUMBLR:
+
+Step 1: Under Settings (the gear button) you'll automatically be on the "Account" page. There is a section that asks "Edit Posts using" ... change that to "plain text/HTML" and save.
+Step 2: Now go back to how you would normally post some text, except now you can create tappable stories thusly. (An example is below):
+
+<div class="tapper">
+This is the first slide.
+
+This is the second slide.
+
+They are separated by two linebreaks.
+</div>
+
+Step 3: Publish post and you're done.
+
+-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
+<script>
+$(function() {
+	var tapperNumber = 0;
+	$(".tapper").each(function() {
+		var counter = 1;
+		var fullItem = $(this).html().split("\n");
+		$(this).attr("rel","2");
+		$(this).empty();
+		var allItems = [];
+		for (i = 0; i < fullItem.length; i++) {
+			if (fullItem[i] != " " && fullItem [i] != "" && fullItem [i] != "\n") {
+				allItems.push(fullItem[i]);
+			}
+		}
+		for (i = 0; i < allItems.length; i++) {
+			$(this).append("<div class='allSlides slide" + tapperNumber +"'>" + allItems[i] + "</div>");	
+		}
+		$(".slide" + tapperNumber).hide();
+		$(this).prepend("<div class='tapView allSlides slide" + tapperNumber +"'>Tap the frame</div>")
+		
+		tapperNumber++;
+
+		$(this).attr("max",allItems.length+2);
+	});
+	$(".tapper").click(function() {
+		if ( parseInt($(this).attr("max")) > parseInt($(this).attr("rel")) ) {
+			var slideNum = parseInt($(this).attr("rel"));
+			var oldNum = slideNum - 1;
+		} else {
+			var slideNum = 1;
+			var oldNum = parseInt($(this).attr("max")) - 1;
+		}
+		$(this).find(".allSlides:nth-child(" + oldNum + ")").hide();
+		$(this).find(".allSlides:nth-child(" + slideNum + ")").show();
+
+		var newNum = slideNum+1; 
+		$(this).attr("rel", newNum);
+	});
+});
+</script>
+
+<style>
+.allSlides {
+	height: 250px;
+	width: 90%;
+	padding: 5%;
+	padding-top: 20%;
+	margin: 10px 0;
+	font-size: 20px;
+	text-align: center;
+	border: 1px solid #555;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	box-shadow: 3px 5px 14px 3px #bbb;
+	-moz-box-shadow: 3px 5px 14px 3px #bbb;
+}
+.tapView { font-size: 13px; }
+</style>
